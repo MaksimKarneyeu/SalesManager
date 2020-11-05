@@ -1,0 +1,66 @@
+<p>
+    <mat-toolbar color="primary">             
+       <span>Edit Sale</span>
+       <span class="example-spacer"></span>              
+    </mat-toolbar>
+ </p>
+ <form class="example-form" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">     
+ <mat-form-field class="example-full-width" >
+    <mat-label for="region">Region</mat-label>
+    <textarea id="region"  formControlName="region" matInput placeholder="Ex. Europe"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="country">Country</mat-label>
+    <textarea id="country"  formControlName="country" matInput placeholder="Ex. Sweden"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="itemType">Item Type</mat-label>
+    <textarea id="itemType"  formControlName="itemType" matInput placeholder="Item Type"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="salesChannel">Sales Channel</mat-label>
+    <textarea id="salesChannel"  formControlName="salesChannel" matInput placeholder="Sales Channel"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="orderPriority">Order Priority</mat-label>
+    <textarea id="orderPriority"  formControlName="orderPriority" matInput placeholder="Order Priority"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="orderDate">Order Date</mat-label>
+    <textarea id="orderDate"  formControlName="orderDate" matInput placeholder="Order Date"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="orderID">Order ID</mat-label>
+    <textarea id="orderID"  formControlName="orderID" matInput placeholder="Order ID"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="shipDate">Ship Date</mat-label>
+    <textarea id="shipDate"  formControlName="shipDate" matInput placeholder="Ship Date"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="unitsSold">Order Date</mat-label>
+    <textarea id="unitsSold"  formControlName="unitsSold" matInput placeholder="Units Sold"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="unitPrice">Unit Price</mat-label>
+    <textarea id="unitPrice"  formControlName="unitPrice" matInput placeholder="Unit Price"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="unitCost">Unit Cost</mat-label>
+    <textarea id="unitCost"  formControlName="unitCost" matInput placeholder="Unit Cost"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="totalRevenue">Total Revenue</mat-label>
+    <textarea id="totalRevenue"  formControlName="totalRevenue" matInput placeholder="Total Revenue"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="totalCost">Total Cost</mat-label>
+    <textarea id="totalCost"  formControlName="totalCost" matInput placeholder="Total Cost"></textarea>
+ </mat-form-field>
+ <mat-form-field class="example-full-width" >
+    <mat-label for="totalProfit">Total Profit</mat-label>
+    <textarea id="totalProfit"  formControlName="totalProfit" matInput placeholder="Total Profit"></textarea>
+ </mat-form-field>
+ <button mat-raised-button color="primary" type="submit">Update</button>             
+ <Label class="ad-label label" (click)="onDelete()" textWrap="true">Delete</Label>
+ </form>

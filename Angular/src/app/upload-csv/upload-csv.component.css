@@ -1,0 +1,33 @@
+ul,
+li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+}
+
+#file-label {
+      display: inline-flex;
+      vertical-align: middle;
+      font-size: 12px;
+      line-height: 18px;
+}
+
+#file-label mat-icon {
+      font-size: 18px;
+      text-align: center;
+}
+
+#file-label a {
+      cursor: pointer;
+}
+
+.material-cust-large-button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #660066;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}

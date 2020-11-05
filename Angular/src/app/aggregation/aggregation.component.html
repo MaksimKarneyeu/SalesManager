@@ -1,0 +1,18 @@
+<mat-form-field appearance="fill">
+    <mat-label>Countries</mat-label>
+    <mat-select (selectionChange)="getSelectedCountry($event)">
+       <mat-option *ngFor="let country of countries" [value]="country">
+       {{country}}
+       </mat-option>
+    </mat-select>
+ </mat-form-field>
+ <mat-form-field appearance="fill">
+    <mat-label>Years</mat-label>
+    <mat-select (selectionChange)="getSelectedYear($event)">
+       <mat-option *ngFor="let year of years" [value]="year">
+       {{year}}
+       </mat-option>
+    </mat-select>
+ </mat-form-field>
+ <button style="pointer-events: none;" mat-raised-button color="primary">Total Orders: {{totalOrders}}</button>
+ <button style="pointer-events: none;" mat-raised-button color="primary">Total Profit: {{totalProfit}}</button>
